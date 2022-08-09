@@ -1,0 +1,97 @@
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: "Source Sans Pro";
+    }
+
+article{
+    width: 100%; height: 600px;
+}
+#article1{
+    height: 800px;
+}
+.backg{
+    width: 100%; height: 100%;
+        
+        /* 배경이미지는 최소 1920*960으로 제작해야 문제가 안생김 */
+        background-image: url(img/책배경.jpg);
+        background-repeat: no-repeat; /* 배경이미지X */
+        background-size: cover; /* 요소를 비율에 맞게 커버 */
+        background-position: center; /* 이미지를 요소의 정가운데로 처리 */
+        background-attachment: fixed; /* 스크롤바 움직일때 이미지가 따라다님 */
+}
+.lb-text p{
+    margin: 0;
+    padding: 0;
+    font-size: 500%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    
+    
+}
+#article2{
+    padding-top: 5%;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.article2_img {
+    margin: 2%;
+    background-color: white;
+    min-height: 500px;
+    min-width: 400px;
+    flex-basis: 23.5%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    border: 1px solid gray;
+}
+.article2_img #p1{
+    font-size: 200%;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    margin: 15px;
+}
+.article2_img #p2{
+    margin: 3%;
+    margin-top: 20px;
+    margin-bottom: 7%;
+    font-family: 'Shadows Into Light', cursive;
+}
+.article2_img hr{
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+.article2_img:hover {
+    background-color: gainsboro;
+    color: white;
+}
+@media screen and (max-width:1023px){
+    .article2_img{
+        flex-basis: 40%;
+    }
+}
+@media screen and (max-width:567px){
+    .article2_img{
+        flex-basis: 60%;
+    }
+}
+#article3{
+    text-align : center;
+    line-height : 150px;
+    height: 150px;
+    background-color: gray;
+    color: white;
+}
